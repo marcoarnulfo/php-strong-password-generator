@@ -1,5 +1,7 @@
 <?php
 
+
+
 function randomPassword($numero, $check) {
     $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!(){}=?~/*[]';
     //$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

@@ -4,8 +4,8 @@ include __DIR__ . '/functions.php';
 
 $check = $_GET['check'];
 $lunghezzaPw = $_GET['pw'];
-var_dump($lunghezzaPw);
-var_dump($check);
+//var_dump($lunghezzaPw);
+//var_dump($check);
 
 if ($check == 'si'){
     $check = true;
@@ -13,9 +13,7 @@ if ($check == 'si'){
     $check = false;
 }
 
-var_dump($check);
-
-
+//var_dump($check);
 
 
 /*
@@ -40,7 +38,7 @@ function randomPassword($numero, $check) {
 */
 
 randomPassword($lunghezzaPw, $check);
-var_dump(randomPassword($lunghezzaPw, $check));
+//var_dump(randomPassword($lunghezzaPw, $check));
 
 /*
 Descrizione
@@ -70,9 +68,9 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
             <h3>Genera una password sicura</h3>
         </div>
         <div class="container bg-primary p-3 rounded mt-5">
-            <div>Nessun parametro valido inserito</div>
+            <div class="text-dark">La tua pw è : <?php echo randomPassword($lunghezzaPw, $check); ?></div>
         </div>
-        <form action="pw.php" method="get">
+        <form action="index.php" method="get">
             <div class="container bg-light text-dark p-5">
                 <div class="mb-3 d-flex justify-content-between">
                 <label for="pw" class="form-label">Lunghezza password</label>
